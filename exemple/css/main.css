@@ -1,0 +1,42 @@
+
+body{
+	background-color: #eee;
+}
+
+.main{
+	background-color: #fff;
+	display: flex;
+	width: 95%;
+	max-width: 1000px;
+	margin: auto;
+	box-shadow: 0 0 10px 1px rgba(0, 0, 0, 0.3);
+	flex-wrap: wrap;
+}
+
+@media all and (max-width: 1024px){
+	.img-box{
+	column-count: 3; /*Количество столбов*/
+	width: 90%;
+	}
+}
+@media all and (max-width: 768px){
+	.img-box{
+	column-count: 2; /*Количество столбов*/
+	width: 100%;
+	}
+}
+@media all and (max-width: 480px){
+	.img-box{
+	column-count: 1; /*Количество столбов*/
+	}
+}
+
+@media all and (min-width: 1200px){
+	.image:hover {
+		opacity: 1;
+		filter: hue-rotate(45deg);
+	}
+	.author:hover {
+		border-color: #111;
+	}
+}
